@@ -7,7 +7,7 @@ const BLUE = '#236DCF'
 function SidebarItem({ icon: Icon, label, active, onClick }) {
   return (
     <button onClick={onClick} className={`group w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors ${active ? 'bg-white/10 text-white' : 'text-white/80 hover:text-white hover:bg-white/5'}`}>
-      <Icon size={18} className={`shrink-0 ${active ? '' : 'group-hover:text-[${BLUE}]'}`} />
+      <Icon size={18} className={`shrink-0 ${active ? '' : 'group-hover:text-[#236DCF]'}`} />
       <span className="text-sm font-medium">{label}</span>
     </button>
   )
@@ -47,7 +47,7 @@ export default function Layout({ children, active = 'Dashboard', onNav }) {
             <div className="flex-1 flex items-center gap-2">
               <div className="relative w-full max-w-md">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/50" size={18} />
-                <input className="w-full bg-white/5 border border-white/10 rounded-lg pl-9 pr-3 py-2 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2" style={{--tw-ring-color: BLUE}} placeholder="Search bookings, customers, courts..." />
+                <input className="w-full bg-white/5 border border-white/10 rounded-lg pl-9 pr-3 py-2 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2" style={{ '--tw-ring-color': BLUE }} placeholder="Search bookings, customers, courts..." />
               </div>
             </div>
             <button className="p-2 rounded-lg hover:bg-white/10"><Bell size={18} /></button>
