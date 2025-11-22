@@ -1,0 +1,38 @@
+
+> vibe-generated-app@1.0.0 dev
+> vite
+
+
+  VITE v5.4.20  ready in 212 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.20.0.246:3000/
+2:33:36 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Layout.jsx:50:176: ERROR: Expected identifier but found "--"
+2:33:37 AM [vite] ✨ new dependencies optimized: @splinetool/react-spline, lucide-react
+2:33:37 AM [vite] ✨ optimized dependencies changed. reloading
+2:33:57 AM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Layout.jsx:50:176: ERROR: Expected identifier but found "--"
+2:34:01 AM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Layout.jsx:50:176: ERROR: Expected identifier but found "--"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Layout.jsx:50:176
+  
+  Expected identifier but found "--"
+  48 |                <div className="relative w-full max-w-md">
+  49 |                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-white/50" size={18} />
+  50 |                  <input className="w-full bg-white/5 border border-white/10 rounded-lg pl-9 pr-3 py-2 text-sm placeholder:text-white/40 focus:outline-none focus:ring-2" style={{--tw-ring-color: BLUE}} placeholder="Search bookings, customers, courts..." />
+     |                                                                                                                                                                                  ^
+  51 |                </div>
+  52 |              </div>
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
